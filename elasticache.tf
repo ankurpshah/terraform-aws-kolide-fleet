@@ -6,7 +6,7 @@ resource "aws_elasticache_replication_group" "redis" {
   }
   engine                        = "redis"
   node_type                     = "cache.t2.small"
-  parameter_group_name          = "default.redis3.2.cluster.on"
+  parameter_group_name          = "default.redis4.0.cluster.on"
   port                          = 6379
   replication_group_description = "Redis cluster for Fleet"
   replication_group_id          = "fleet-redis-cluster"
