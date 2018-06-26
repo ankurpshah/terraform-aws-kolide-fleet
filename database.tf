@@ -3,7 +3,7 @@ resource "aws_db_instance" "fleet_db" {
   backup_retention_period = "1"
   db_subnet_group_name    = "${var.db_subnet_group_name}"
   engine                  = "mariadb"
-  identifier              = "fleet-db"
+  identifier              = "fleet-db-prod"
   instance_class          = "db.t2.micro"
   multi_az                = true
   name                    = "fleet"
