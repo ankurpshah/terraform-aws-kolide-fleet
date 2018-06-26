@@ -5,6 +5,7 @@ resource "aws_db_instance" "fleet_db" {
   engine                  = "mariadb"
   identifier              = "fleet-db-prod"
   instance_class          = "db.t2.micro"
+  engine_version          = "10.2.12"
   multi_az                = true
   name                    = "fleet"
   option_group_name       = "default:mariadb-10-2"
